@@ -367,7 +367,8 @@ h3 {
 .post-list,
 .proof-grid,
 .value-grid,
-.commitment-grid {
+.commitment-grid,
+.insight-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
@@ -382,7 +383,8 @@ h3 {
 .directory-card,
 .proof-grid > div,
 .value-card,
-.commitment-grid > div {
+.commitment-grid > div,
+.insight-card {
   min-height: 220px;
   padding: 24px;
   border: 1px solid var(--line);
@@ -393,6 +395,7 @@ h3 {
 
 .topic-card,
 .directory-card,
+.insight-card,
 .text-link,
 .post-card h3 a,
 .mini-directory a {
@@ -421,7 +424,8 @@ h3 {
 .directory-card p,
 .proof-grid p,
 .value-card p,
-.commitment-grid p {
+.commitment-grid p,
+.insight-card p:last-child {
   margin-bottom: 0;
   color: var(--muted);
 }
@@ -484,6 +488,34 @@ h3 {
   padding: clamp(42px, 6vw, 70px) clamp(18px, 5vw, 72px);
   color: var(--white);
   background: linear-gradient(135deg, #1e363d, #314a4f 58%, #6f5a3e);
+}
+
+.social-band {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 380px);
+  gap: clamp(24px, 5vw, 64px);
+  align-items: center;
+  padding: clamp(46px, 7vw, 80px) clamp(18px, 5vw, 72px);
+  background: var(--soft);
+}
+
+.social-band p {
+  max-width: 780px;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.social-list {
+  display: grid;
+  gap: 10px;
+}
+
+.social-list span {
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  font-weight: 750;
 }
 
 .portal-band h2 {
@@ -644,6 +676,9 @@ h3 {
 }
 
 .site-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
   padding: 28px clamp(18px, 5vw, 72px);
   color: var(--muted);
   background: var(--paper);
@@ -653,13 +688,35 @@ h3 {
   margin: 0;
 }
 
+.footer-note {
+  max-width: 680px;
+  margin-top: 6px;
+  font-size: 0.88rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  font-size: 0.9rem;
+}
+
+.footer-links a {
+  color: var(--steel);
+  font-weight: 750;
+  text-decoration: none;
+}
+
 @media (max-width: 1000px) {
   .topic-grid,
   .directory-grid,
   .post-list,
   .proof-grid,
   .value-grid,
-  .commitment-grid {
+  .commitment-grid,
+  .insight-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -699,14 +756,24 @@ h3 {
   .visual-band,
   .credential-strip,
   .portal-band,
+  .social-band,
   .topic-grid,
   .directory-grid,
   .post-list,
   .proof-grid,
   .value-grid,
   .commitment-grid,
+  .insight-grid,
   .contact-panel {
     grid-template-columns: 1fr;
+  }
+
+  .site-footer {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    justify-content: flex-start;
   }
 
   .portal-band .button {
