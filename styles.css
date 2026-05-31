@@ -232,6 +232,12 @@ h1 {
   background: rgba(255, 253, 249, 0.12);
 }
 
+.dark-button {
+  border-color: rgba(22, 27, 31, 0.26);
+  background: rgba(255, 253, 249, 0.2);
+  color: var(--ink);
+}
+
 .section,
 .band,
 .page-hero,
@@ -241,6 +247,37 @@ h1 {
 
 .band {
   background: var(--soft);
+}
+
+.credential-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.credential-strip > div {
+  min-height: 118px;
+  padding: 24px clamp(18px, 4vw, 44px);
+  background: var(--paper);
+}
+
+.credential-strip span,
+.value-card span {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--steel);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.credential-strip strong {
+  display: block;
+  max-width: 260px;
+  font-size: 1.18rem;
+  line-height: 1.25;
 }
 
 .page-hero {
@@ -315,7 +352,8 @@ h3 {
 .topic-grid,
 .directory-grid,
 .post-list,
-.proof-grid {
+.proof-grid,
+.value-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
@@ -328,7 +366,8 @@ h3 {
 .topic-card,
 .post-card,
 .directory-card,
-.proof-grid > div {
+.proof-grid > div,
+.value-card {
   min-height: 220px;
   padding: 24px;
   border: 1px solid var(--line);
@@ -365,9 +404,14 @@ h3 {
 
 .post-card p:last-child,
 .directory-card p,
-.proof-grid p {
+.proof-grid p,
+.value-card p {
   margin-bottom: 0;
   color: var(--muted);
+}
+
+.value-card h3 {
+  margin-top: 0;
 }
 
 .feature-strip .post-card {
@@ -399,6 +443,59 @@ h3 {
   background:
     linear-gradient(180deg, rgba(251, 250, 247, 0.92), rgba(251, 250, 247, 1)),
     linear-gradient(135deg, rgba(47, 95, 107, 0.08), rgba(189, 138, 67, 0.08));
+}
+
+.portal-band {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+  padding: clamp(42px, 6vw, 70px) clamp(18px, 5vw, 72px);
+  color: var(--white);
+  background: linear-gradient(135deg, #1e363d, #314a4f 58%, #6f5a3e);
+}
+
+.portal-band h2 {
+  max-width: 760px;
+}
+
+.portal-band p {
+  max-width: 820px;
+  margin-bottom: 0;
+  color: rgba(255, 253, 249, 0.82);
+  font-size: 1.08rem;
+}
+
+.portal-band .section-kicker {
+  color: #eac278;
+}
+
+.faq-section {
+  background: var(--paper);
+}
+
+.faq-list {
+  display: grid;
+  gap: 12px;
+  max-width: 980px;
+}
+
+.faq-list details {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.faq-list summary {
+  cursor: pointer;
+  padding: 20px 22px;
+  font-weight: 800;
+}
+
+.faq-list p {
+  margin: 0;
+  padding: 0 22px 22px;
+  color: var(--muted);
 }
 
 .visual-band {
@@ -529,7 +626,8 @@ h3 {
   .topic-grid,
   .directory-grid,
   .post-list,
-  .proof-grid {
+  .proof-grid,
+  .value-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -567,12 +665,19 @@ h3 {
   .split-section,
   .article-layout,
   .visual-band,
+  .credential-strip,
+  .portal-band,
   .topic-grid,
   .directory-grid,
   .post-list,
   .proof-grid,
+  .value-grid,
   .contact-panel {
     grid-template-columns: 1fr;
+  }
+
+  .portal-band .button {
+    width: fit-content;
   }
 
   .article-aside {
@@ -586,6 +691,10 @@ h3 {
   }
 
   .button {
+    width: 100%;
+  }
+
+  .portal-band .button {
     width: 100%;
   }
 }
