@@ -449,6 +449,25 @@ h3 {
   line-height: 1.3;
 }
 
+.founder-panel {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.founder-panel > div {
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 8px 24px rgba(18, 27, 31, 0.06);
+}
+
+.founder-panel p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
 .feature-strip .post-card {
   background: var(--paper);
 }
@@ -716,6 +735,7 @@ h3 {
   .proof-grid,
   .value-grid,
   .commitment-grid,
+  .founder-panel,
   .insight-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -763,6 +783,7 @@ h3 {
   .proof-grid,
   .value-grid,
   .commitment-grid,
+  .founder-panel,
   .insight-grid,
   .contact-panel {
     grid-template-columns: 1fr;
