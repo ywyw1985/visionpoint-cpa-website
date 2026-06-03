@@ -1,19 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://visionpointcpa.com/</loc></url>
-  <url><loc>https://visionpointcpa.com/services/</loc></url>
-  <url><loc>https://visionpointcpa.com/florida-cpa/</loc></url>
-  <url><loc>https://visionpointcpa.com/small-business-cpa/</loc></url>
-  <url><loc>https://visionpointcpa.com/florida-tax-planning/</loc></url>
-  <url><loc>https://visionpointcpa.com/bookkeeping-cleanup/</loc></url>
-  <url><loc>https://visionpointcpa.com/tax-planning/</loc></url>
-  <url><loc>https://visionpointcpa.com/business-advisory/</loc></url>
-  <url><loc>https://visionpointcpa.com/resources/</loc></url>
-  <url><loc>https://visionpointcpa.com/insights/</loc></url>
-  <url><loc>https://visionpointcpa.com/about/</loc></url>
-  <url><loc>https://visionpointcpa.com/contact/</loc></url>
+  <url><loc>https://visionpointcpa.com/es/</loc></url>
   <url><loc>https://visionpointcpa.com/zh/</loc></url>
+  <url><loc>https://visionpointcpa.com/ko/</loc></url>
+  <url><loc>https://visionpointcpa.com/services/</loc></url>
+  <url><loc>https://visionpointcpa.com/es/services/</loc></url>
+  <url><loc>https://visionpointcpa.com/zh/services/</loc></url>
+  <url><loc>https://visionpointcpa.com/ko/services/</loc></url>
+  <url><loc>https://visionpointcpa.com/tax-planning/</loc></url>
+  <url><loc>https://visionpointcpa.com/es/tax-planning/</loc></url>
+  <url><loc>https://visionpointcpa.com/zh/tax-planning/</loc></url>
+  <url><loc>https://visionpointcpa.com/ko/tax-planning/</loc></url>
+  <url><loc>https://visionpointcpa.com/business-advisory/</loc></url>
+  <url><loc>https://visionpointcpa.com/es/business-advisory/</loc></url>
+  <url><loc>https://visionpointcpa.com/zh/business-advisory/</loc></url>
+  <url><loc>https://visionpointcpa.com/ko/business-advisory/</loc></url>
+  <url><loc>https://visionpointcpa.com/resources/</loc></url>
+  <url><loc>https://visionpointcpa.com/es/resources/</loc></url>
+  <url><loc>https://visionpointcpa.com/zh/resources/</loc></url>
+  <url><loc>https://visionpointcpa.com/ko/resources/</loc></url>
+  <url><loc>https://visionpointcpa.com/insights/</loc></url>
+  <url><loc>https://visionpointcpa.com/es/insights/</loc></url>
+  <url><loc>https://visionpointcpa.com/zh/insights/</loc></url>
+  <url><loc>https://visionpointcpa.com/ko/insights/</loc></url>
+  <url><loc>https://visionpointcpa.com/about/</loc></url>
+  <url><loc>https://visionpointcpa.com/es/about/</loc></url>
+  <url><loc>https://visionpointcpa.com/zh/about/</loc></url>
+  <url><loc>https://visionpointcpa.com/ko/about/</loc></url>
+  <url><loc>https://visionpointcpa.com/contact/</loc></url>
+  <url><loc>https://visionpointcpa.com/es/contact/</loc></url>
+  <url><loc>https://visionpointcpa.com/zh/contact/</loc></url>
+  <url><loc>https://visionpointcpa.com/ko/contact/</loc></url>
   <url><loc>https://visionpointcpa.com/privacy/</loc></url>
+  <url><loc>https://visionpointcpa.com/es/privacy/</loc></url>
+  <url><loc>https://visionpointcpa.com/zh/privacy/</loc></url>
+  <url><loc>https://visionpointcpa.com/ko/privacy/</loc></url>
   <url><loc>https://visionpointcpa.com/terms/</loc></url>
+  <url><loc>https://visionpointcpa.com/es/terms/</loc></url>
+  <url><loc>https://visionpointcpa.com/zh/terms/</loc></url>
+  <url><loc>https://visionpointcpa.com/ko/terms/</loc></url>
   <url><loc>https://visionpointcpa.com/disclaimer/</loc></url>
+  <url><loc>https://visionpointcpa.com/es/disclaimer/</loc></url>
+  <url><loc>https://visionpointcpa.com/zh/disclaimer/</loc></url>
+  <url><loc>https://visionpointcpa.com/ko/disclaimer/</loc></url>
+  <url><loc>https://visionpointcpa.com/florida-cpa/</loc></url>
+  <url><loc>https://visionpointcpa.com/es/florida-cpa/</loc></url>
+  <url><loc>https://visionpointcpa.com/zh/florida-cpa/</loc></url>
+  <url><loc>https://visionpointcpa.com/ko/florida-cpa/</loc></url>
+  <url><loc>https://visionpointcpa.com/small-business-cpa/</loc></url>
+  <url><loc>https://visionpointcpa.com/es/small-business-cpa/</loc></url>
+  <url><loc>https://visionpointcpa.com/zh/small-business-cpa/</loc></url>
+  <url><loc>https://visionpointcpa.com/ko/small-business-cpa/</loc></url>
+  <url><loc>https://visionpointcpa.com/florida-tax-planning/</loc></url>
+  <url><loc>https://visionpointcpa.com/es/florida-tax-planning/</loc></url>
+  <url><loc>https://visionpointcpa.com/zh/florida-tax-planning/</loc></url>
+  <url><loc>https://visionpointcpa.com/ko/florida-tax-planning/</loc></url>
+  <url><loc>https://visionpointcpa.com/bookkeeping-cleanup/</loc></url>
+  <url><loc>https://visionpointcpa.com/es/bookkeeping-cleanup/</loc></url>
+  <url><loc>https://visionpointcpa.com/zh/bookkeeping-cleanup/</loc></url>
+  <url><loc>https://visionpointcpa.com/ko/bookkeeping-cleanup/</loc></url>
 </urlset>
