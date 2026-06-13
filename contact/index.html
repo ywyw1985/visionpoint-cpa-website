@@ -13,6 +13,15 @@
     
     <title>Contact | VISIONPOINT TAX & ACCOUNTING INCORPORATED</title>
     <link rel="stylesheet" href="/styles.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-19Q81H30JX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-19Q81H30JX');
+    </script>
   </head>
   <body class="subpage">
     <header class="site-header" aria-label="Primary">
@@ -20,22 +29,72 @@
       <div class="header-tools"><nav class="nav" aria-label="Site navigation"><a href="/services/">Services</a><a href="/tax-planning/">Tax Planning</a><a href="/business-advisory/">Advisory</a><a href="/resources/">Resources</a><a href="/insights/">Insights</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav><nav class="language-switcher" aria-label="Language selector"><a href="/contact/" lang="en">EN</a><a href="/es/contact/" lang="es">ES</a><a href="/zh/contact/" lang="zh-Hans">中文</a><a href="/ko/contact/" lang="ko">한국어</a></nav></div>
     </header>
     <main>
-      <section class="page-hero"><div class="page-hero-inner"><p class="article-meta">Contact</p><h1>Early inquiries and launch updates.</h1><p>This page lists temporary contact details while the full client intake workflow and secure portal are being prepared.</p></div></section>
+      <section class="page-hero"><div class="page-hero-inner"><p class="article-meta">Contact</p><h1>Ask a private tax or accounting question.</h1><p>Use this page for early inquiries while the full client intake workflow and secure portal are being prepared.</p></div></section>
       <section class="visual-band">
         <figure class="service-visual">
           <img src="/assets/client-intake-image.png" alt="Professional client intake materials arranged on a desk for a CPA consultation.">
         </figure>
         <div class="visual-copy">
-          <p class="section-kicker">Client Intake</p>
-          <h2>A focused first conversation saves time.</h2>
-          <p>New client calls work best when the firm understands the service need, timeline, current records, and any urgent tax or accounting deadlines.</p>
+          <p class="section-kicker">Private Inquiry</p>
+          <h2>A focused question helps us understand the next step.</h2>
+          <p>Share the topic, timing, and what you need help understanding. Questions are reviewed privately, and email addresses are not published.</p>
         </div>
       </section>
-      <section class="section contact-panel">
-        <div class="contact-box"><p class="section-kicker">Early Inquiries</p><h2>Share what you may need later.</h2><p>Use the temporary email for general questions or launch updates. Please do not send sensitive tax documents until a secure client portal is available.</p></div>
-        <div class="contact-box"><p class="tag">Contact</p><h3>Email</h3><p><a class="contact-link" href="mailto:antoao208@gmail.com">antoao208@gmail.com</a></p><p class="contact-note">Temporary contact email while the website is in progress.</p><h3>Phone</h3><p>Not available yet</p><p class="contact-note">Phone contact is not currently available while the website is in progress.</p><h3>Office</h3><p>By appointment</p></div>
+      <section class="section question-panel">
+        <div class="contact-box">
+          <p class="section-kicker">Contact Desk</p>
+          <h2>Send a question for private review.</h2>
+          <p>Use this form for general tax, accounting, bookkeeping, and business advisory questions. Please do not include Social Security numbers, tax forms, bank statements, payroll files, or other sensitive documents.</p>
+          <h3>Email</h3>
+          <p><a class="contact-link" href="mailto:antoao208@gmail.com">antoao208@gmail.com</a></p>
+          <p class="contact-note">Temporary contact email while the website is in progress. A professional domain email will be added later.</p>
+          <h3>Phone</h3>
+          <p>Not available yet</p>
+          <p class="contact-note">Phone contact is not currently available while the website is in progress.</p>
+        </div>
+        <div class="contact-box">
+          <form class="contact-form" data-contact-form data-sending="Sending..." data-success="Thank you. Your question has been sent for review." data-error="The message could not be sent. Please try again.">
+            <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
+            <input type="hidden" name="language" value="English">
+            <div class="form-row">
+              <label>Name
+                <input name="name" autocomplete="name" required>
+              </label>
+              <label>Email for private reply
+                <input name="email" type="email" autocomplete="email" required>
+              </label>
+            </div>
+            <div class="form-row">
+              <label>Phone, optional
+                <input name="phone" autocomplete="tel">
+              </label>
+              <label>Topic
+                <select name="topic" required>
+                  <option value="">Select a topic</option>
+                  <option value="tax_planning">Tax planning</option>
+                  <option value="tax_return">Tax return preparation</option>
+                  <option value="bookkeeping">Bookkeeping or cleanup</option>
+                  <option value="business_advisory">Business advisory</option>
+                  <option value="entity_payroll">Entity or payroll question</option>
+                  <option value="launch_update">Launch update</option>
+                  <option value="other">Other</option>
+                </select>
+              </label>
+            </div>
+            <label>Question
+              <textarea name="message" required minlength="20" placeholder="Briefly describe the question, deadline, and type of help you are looking for."></textarea>
+            </label>
+            <label class="consent-line">
+              <input type="checkbox" name="consent" value="yes" required>
+              <span>I understand this form is for general inquiries only and should not be used to send sensitive tax documents.</span>
+            </label>
+            <button class="button primary" type="submit">Submit for review</button>
+            <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+          </form>
+        </div>
       </section>
     </main>
+    <script src="/assets/contact-form.js" defer></script>
     <footer class="site-footer"><div><p>&copy; 2026 VISIONPOINT TAX & ACCOUNTING INCORPORATED.</p><p class="footer-note">Website preview. Content is for general information only and does not create a CPA-client relationship.</p></div><nav class="footer-links" aria-label="Footer links"><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Use</a><a href="/disclaimer/">Disclaimer</a></nav></footer>
   </body>
 </html>

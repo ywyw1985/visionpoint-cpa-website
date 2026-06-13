@@ -12,6 +12,15 @@
     <link rel="alternate" hreflang="x-default" href="https://visionpointcpa.com/contact/">
     <title>Contacto | VISIONPOINT TAX & ACCOUNTING INCORPORATED</title>
     <link rel="stylesheet" href="/styles.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-19Q81H30JX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-19Q81H30JX');
+    </script>
   </head>
   <body class="subpage">
     <header class="site-header" aria-label="Primary">
@@ -19,10 +28,63 @@
       <div class="header-tools"><nav class="nav" aria-label="Site navigation"><a href="/es/services/">Servicios</a><a href="/es/tax-planning/">Planificación fiscal</a><a href="/es/business-advisory/">Asesoría</a><a href="/es/resources/">Recursos</a><a href="/es/insights/">Perspectivas</a><a href="/es/about/">Acerca de</a><a href="/es/contact/">Contacto</a></nav><nav class="language-switcher" aria-label="Language selector"><a href="/contact/" lang="en">EN</a><a href="/es/contact/" lang="es">ES</a><a href="/zh/contact/" lang="zh-Hans">中文</a><a href="/ko/contact/" lang="ko">한국어</a></nav></div>
     </header>
     <main>
-      <section class="page-hero"><div class="page-hero-inner"><p class="article-meta">Contacto</p><h1>Consultas iniciales y actualizaciones de lanzamiento.</h1><p>Esta página muestra datos temporales mientras se prepara el proceso completo de intake y portal seguro.</p></div></section>
-      <section class="visual-band"><figure class="service-visual"><img src="/assets/client-intake-image.png" alt="Professional client intake materials arranged on a desk for a CPA consultation."></figure><div class="visual-copy"><p class="section-kicker">Intake de cliente</p><h2>Una primera conversación enfocada ahorra tiempo.</h2><p>Use el correo temporal para preguntas generales o actualizaciones. No envíe documentos fiscales sensibles hasta que haya un portal seguro.</p></div></section>
-      <section class="article-layout"><article class="article"><h2>Email</h2><p>antoao208@gmail.com</p><p>Correo temporal mientras el sitio está en desarrollo.</p><h2>Teléfono</h2><p>No disponible todavía</p><p>El contacto telefónico aún no está disponible.</p><h2>Oficina</h2><p>Con cita previa</p><p>La atención presencial se definirá antes del lanzamiento completo.</p></article><aside class="article-aside"><p class="tag">Contacto</p><h2>Explorar</h2><a href="/es/services/">Servicios</a><a href="/es/tax-planning/">Planificación fiscal</a><a href="/es/contact/">Contacto</a></aside></section>
+      <section class="page-hero"><div class="page-hero-inner"><p class="article-meta">Contacto</p><h1>Envíe una pregunta fiscal o contable de forma privada.</h1><p>Use esta página para consultas iniciales mientras se prepara el proceso formal de admisión de clientes y el portal seguro.</p></div></section>
+      <section class="visual-band"><figure class="service-visual"><img src="/assets/client-intake-image.png" alt="Professional client intake materials arranged on a desk for a CPA consultation."></figure><div class="visual-copy"><p class="section-kicker">Consulta privada</p><h2>Una pregunta clara ayuda a identificar el siguiente paso.</h2><p>Comparta el tema, el plazo y el tipo de ayuda que necesita. Las preguntas se revisan de forma privada y las direcciones de correo no se publican.</p></div></section>
+      <section class="section question-panel">
+        <div class="contact-box">
+          <p class="section-kicker">Formulario de contacto</p>
+          <h2>Envíe una consulta para revisión privada.</h2>
+          <p>Use este formulario para preguntas generales sobre impuestos, contabilidad, teneduría de libros y asesoría empresarial. No incluya números de Seguro Social, formularios fiscales, estados bancarios, nómina ni otros documentos sensibles.</p>
+          <h3>Email</h3>
+          <p><a class="contact-link" href="mailto:antoao208@gmail.com">antoao208@gmail.com</a></p>
+          <p class="contact-note">Correo temporal mientras el sitio está en desarrollo. Más adelante se añadirá un email con dominio profesional.</p>
+          <h3>Teléfono</h3>
+          <p>No disponible todavía</p>
+          <p class="contact-note">El contacto telefónico aún no está disponible mientras el sitio está en desarrollo.</p>
+        </div>
+        <div class="contact-box">
+          <form class="contact-form" data-contact-form data-sending="Enviando..." data-success="Gracias. Su pregunta fue enviada para revisión." data-error="No se pudo enviar el mensaje. Inténtelo de nuevo.">
+            <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
+            <input type="hidden" name="language" value="Spanish">
+            <div class="form-row">
+              <label>Nombre
+                <input name="name" autocomplete="name" required>
+              </label>
+              <label>Email para respuesta privada
+                <input name="email" type="email" autocomplete="email" required>
+              </label>
+            </div>
+            <div class="form-row">
+              <label>Teléfono, opcional
+                <input name="phone" autocomplete="tel">
+              </label>
+              <label>Tema
+                <select name="topic" required>
+                  <option value="">Seleccione un tema</option>
+                  <option value="tax_planning">Planificación fiscal</option>
+                  <option value="tax_return">Preparación de declaraciones</option>
+                  <option value="bookkeeping">Teneduría de libros o limpieza contable</option>
+                  <option value="business_advisory">Asesoría empresarial</option>
+                  <option value="entity_payroll">Entidad o nómina</option>
+                  <option value="launch_update">Actualización de lanzamiento</option>
+                  <option value="other">Otro</option>
+                </select>
+              </label>
+            </div>
+            <label>Pregunta
+              <textarea name="message" required minlength="20" placeholder="Describa brevemente la pregunta, el plazo y el tipo de ayuda que busca."></textarea>
+            </label>
+            <label class="consent-line">
+              <input type="checkbox" name="consent" value="yes" required>
+              <span>Entiendo que este formulario es solo para consultas generales y no debe usarse para enviar documentos fiscales sensibles.</span>
+            </label>
+            <button class="button primary" type="submit">Enviar para revisión</button>
+            <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
     </main>
+    <script src="/assets/contact-form.js" defer></script>
     <footer class="site-footer"><div><p>&copy; 2026 VISIONPOINT TAX & ACCOUNTING INCORPORATED.</p><p class="footer-note">Sitio web en versión preliminar. El contenido es solo información general y no crea una relación cliente-CPA.</p></div><nav class="footer-links" aria-label="Footer links"><a href="/es/privacy/">Política de privacidad</a><a href="/es/terms/">Términos de uso</a><a href="/es/disclaimer/">Aviso legal</a></nav></footer>
   </body>
 </html>

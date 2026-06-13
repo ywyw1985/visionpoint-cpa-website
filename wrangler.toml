@@ -1,7 +1,13 @@
 name = "visionpoint-cpa-website"
 compatibility_date = "2026-06-03"
+main = "src/worker.js"
 
 [assets]
 directory = "."
+binding = "ASSETS"
+run_worker_first = ["/api/*"]
 html_handling = "auto-trailing-slash"
 not_found_handling = "404-page"
+
+[vars]
+CONTACT_TO_EMAIL = "antoao208@gmail.com"

@@ -1,0 +1,11 @@
+.git
+.git/**
+.npm-cache
+.npm-cache/**
+scripts
+scripts/**
+src
+src/**
+wrangler.toml
+publishing-guide.md
+README.md
