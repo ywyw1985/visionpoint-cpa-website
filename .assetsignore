@@ -1,5 +1,7 @@
 .git
 .git/**
+.wrangler
+.wrangler/**
 .npm-cache
 .npm-cache/**
 scripts
