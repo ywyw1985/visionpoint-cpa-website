@@ -99,7 +99,7 @@ async function handleContact(request, env) {
     return jsonResponse({ ok: false, message: "Email delivery is not configured yet." }, 503);
   }
 
-  const to = env.CONTACT_TO_EMAIL || "antoao208@gmail.com";
+  const to = env.CONTACT_TO_EMAIL || "visionpointcpa@gmail.com";
   const from = env.RESEND_FROM_EMAIL || "VisionPoint CPA <onboarding@resend.dev>";
   const subject = `VisionPoint CPA inquiry: ${TOPIC_LABELS[data.topic] || data.topic}`;
 
